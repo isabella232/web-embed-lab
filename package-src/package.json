@@ -28,7 +28,7 @@
     "url": "https://github.com/fullstorydev/web-embed-lab/releases/download/v{{version}}/web-embed-lab_{{version}}_{{platform}}_{{arch}}.tar.gz"
   },
   "dependencies": {
-    "ngrok": "^3.2.5",
-    "go-npm": "^0.1.9"
+    "go-npm": "github:jurassix/go-npm#56ea8011d5af9dca434015a4456d4e17a7bc02c0",
+    "ngrok": "^3.2.5"
   }
 }
