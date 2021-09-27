@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/fullstorydev/web-embed-lab#readme",
   "scripts": {
-    "postinstall": "go-npm install && mv ./node_modules/.bin/* ./tmp/* ../.bin/",
+    "postinstall": "go-npm install && mv ./node_modules/.bin ../.bin && cp -R ./tmp/* ../.bin",
     "preuninstall": "go-npm uninstall"
   },
   "goBinary": {
@@ -28,7 +28,7 @@
     "url": "https://github.com/fullstorydev/web-embed-lab/releases/download/v{{version}}/web-embed-lab_{{version}}_{{platform}}_{{arch}}.tar.gz"
   },
   "dependencies": {
-    "go-npm": "github:jurassix/go-npm#baf43b2050164e93ef451c61ec7c90b9c701fa0f",
+    "go-npm": "github:jurassix/go-npm#89a07ce48e7561daf424ba3d77abc2b80f41f78f",
     "ngrok": "^3.2.5"
   }
 }
