@@ -11,6 +11,13 @@ builds:
     id: "runner"
     binary: "runner"
     main: ./go/src/wel/commands/runner/main/runner.go
+    goos:
+      - linux
+      - darwin
+    goarch:
+      - amd64
+      - arm64
+      - 386
     hooks:
       post: make bintarget={{ .Path }} sign
   -
@@ -20,6 +27,13 @@ builds:
     id: "auto-formulate"
     binary: "auto-formulate"
     main: ./go/src/wel/commands/auto-formulate/main/auto-formulate.go
+    goos:
+      - linux
+      - darwin
+    goarch:
+      - amd64
+      - arm64
+      - 386
     hooks:
       post: make bintarget={{ .Path }} sign
 
