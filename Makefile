@@ -38,6 +38,9 @@ commands: $(CMDS)
 
 services: $(SVCS)
 
+tools:
+	go build -o $(WEL_HOME)/go/bin/gorepoman github.com/fullstorydev/gorepoman/main/gorepoman
+
 sign:
 ifeq ($(ARCH),Darwin)
 	echo "Signing $(bintarget)"
