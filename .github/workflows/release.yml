@@ -29,8 +29,8 @@ jobs:
         name: Publish to npm
         run: |
           echo "//registry.npmjs.org/:_authToken=${{ secrets.NpmAuthToken }}" > ~/.npmrc
-          git config --global user.email "trevor@trevor.smith.name"
-          git config --global user.name "trevorfsmith"
+          git config --global user.email "clint@fullstory.com"
+          git config --global user.name "jurassix"
           ./scripts/prep-npm-publication.sh
           cd package-dist
           npm publish
