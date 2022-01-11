@@ -12,7 +12,7 @@ import (
 	"wel/services/host"
 	"wel/tunnels"
 
-	aurora "github.com/logrusorgru/aurora/v3"
+	"github.com/logrusorgru/aurora"
 )
 
 var logger = log.New(os.Stdout, "[runner] ", 0)

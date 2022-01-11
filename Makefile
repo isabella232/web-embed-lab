@@ -1,3 +1,4 @@
+export GO111MODULE=off
 export WEL_HOME    := $(shell pwd)
 export GOPATH      := $(WEL_HOME)/go
 export GOSRC       := $(GOPATH)/src
