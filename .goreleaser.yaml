@@ -23,6 +23,7 @@ builds:
       post: make bintarget={{ .Path }} sign
   -
     env:
+    - GO111MODULE=off
     - CGO_ENABLED=0
     - GOPATH=/Users/runner/work/web-embed-lab/web-embed-lab/go
     id: "auto-formulate"
